@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Transition</title>
+        <style>
+            .square {
+                width: 200px;
+                height: 200px;
+                background-color: lightblue;
+                margin: 300px auto;
+                animation-iteration-count: infinite;
+                animation-name: square-to-circle;
+                animation-duration: 2s;
+                animation-delay: 0.5s;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+            }
+
+            @keyframes square-to-circle {
+                0% {
+                    border-radius: 0;
+                    background-color: lightblue;
+                    transform: rotate(0deg);
+                }
+
+                25% {
+                    border-radius: 50% 0 0 0;
+                    background-color: rgb(147, 209, 229);
+                    transform: rotate(45deg);
+                }
+
+                50% {
+                    border-radius: 50% 50% 0 0;
+                    background-color: rgb(130, 209, 236);
+                    transform: rotate(90deg);
+                }
+
+                75% {
+                    border-radius: 50% 50% 50% 0;
+                    background-color: rgb(102, 201, 234);
+                    transform: rotate(135deg);
+                }
+
+                100% {
+                    border-radius: 50%;
+                    background-color: rgb(74, 195, 236);
+                    transform: rotate(180deg);
+                }
+            }
+
+            .animation {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                margin: 50px 100px;
+                background-color: yellow;
+                animation-iteration-count: infinite;
+                animation-name: move-color;
+                animation-duration: 4s;
+                animation-delay: 0.5s;
+                animation-timing-function: linear;
+                animation-direction: normal;
+            }
+
+            @keyframes move-color {
+                0% {
+                    background-color: yellow;
+                    left: 0;
+                    top: 0;
+                    transform: rotate(0deg);
+                    height: 200px;
+                    width: 200px;
+                    opacity: 100%;
+                    border-width: 10px;
+                    border-style: dashed;
+                    border-top-color: lightskyblue;
+                    border-bottom-color: lightskyblue;
+                    border-left-color: lightskyblue;
+                    border-right-color: lightskyblue;
+                    border-radius: 0%;
+                }
+
+                25% {
+                    background-color: orange;
+                    left: 200px;
+                    top: 0px;
+                    transform: rotate(90deg);
+                    height: 100px;
+                    width: 100px;
+                    border-width: 10px;
+                    border-style: dashed;
+                    border-top-color: midnightblue;
+                    border-bottom-color: midnightblue;
+                    border-left-color: lightskyblue;
+                    border-right-color: lightskyblue;
+                    border-radius: 50% 50% 0 0;
+                }
+
+                50% {
+                    background-color: red;
+                    left: 200px;
+                    top: 200px;
+                    transform: rotate(180deg);
+                    height: 200px;
+                    width: 200px;
+                    border-width: 10px;
+                    border-style: dashed;
+                    border-top-color: midnightblue;
+                    border-bottom-color: midnightblue;
+                    border-left-color: midnightblue;
+                    border-right-color: midnightblue;
+                    border-radius: 50%;
+                }
+
+                75% {
+                    background-color: orange;
+                    left: 0px;
+                    top: 200px;
+                    transform: rotate(270deg);
+                    height: 100px;
+                    width: 100px;
+                    border-width: 10px;
+                    border-style: dashed;
+                    border-top-color: midnightblue;
+                    border-bottom-color: midnightblue;
+                    border-left-color: lightskyblue;
+                    border-right-color: lightskyblue;
+                    border-radius: 50% 50% 0 0;
+                }
+
+                100% {
+                    background-color: yellow;
+                    left: 0px;
+                    top: 0px;
+                    transform: rotate(360deg);
+                    height: 200px;
+                    width: 200px;
+                    border-width: 10px;
+                    border-style: dashed;
+                    border-top-color: lightskyblue;
+                    border-bottom-color: lightskyblue;
+                    border-left-color: lightskyblue;
+                    border-right-color: lightskyblue;
+                    border-radius: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="animation"></div>
+
+        <div class="square"></div>
+    </body>
+
+    <footer>
+    </footer>
+</html>

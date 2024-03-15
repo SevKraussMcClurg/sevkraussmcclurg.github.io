@@ -1,0 +1,55 @@
+body {
+    background-color: #E7ECE1;
+}
+
+.githublink {
+    font-weight: bold;
+    background-color: #6C8C86;
+}
+
+.githublink :hover {
+    background-color: #387373;
+}
+
+.heavyfont {
+    font-size: 35px;
+}
+
+.links {
+    margin: 50px auto;
+    width: 600px;
+    height: 300px;
+    vertical-align: top;
+    background-color: #AABFB3;
+    display: grid;
+}
+
+td {
+    padding: 5px;
+    color: #387373;
+    font-size: 30px;
+}
+
+tr :hover {
+    background-color: rgb(136, 162, 149)
+}
+
+.content {
+    display: grid;
+    align-items: center;
+}
+
+table {
+    background-color: #AABFB3;
+    text-align: center;
+}
+
+h1 {
+    color: #025959;
+    font-size: 40px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
