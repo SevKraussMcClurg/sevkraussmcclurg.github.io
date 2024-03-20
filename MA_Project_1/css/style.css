@@ -19,6 +19,10 @@ li a {
 
 li a:hover:not(.active) {
     color: #f5ece1;
+    background: -webkit-repeating-radial-gradient(#fff6eb, #ba8200);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .active {
