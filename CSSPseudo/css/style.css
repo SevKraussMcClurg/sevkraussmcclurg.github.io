@@ -1,0 +1,99 @@
+body {
+    background-color: lightsteelblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2, h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: white;
+    padding: 20px;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid gray;
+    display: block;
+    padding: 20px;
+    color: black;
+}
+
+pre code:hover {
+    background-color: #777;
+}
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:visited {
+    color: lightpink;
+}
+
+a:active {
+    color: pink;
+}
+
+a.special {
+    color: orange;
+}
+
+p:first-child {
+    color: steelblue;
+}
+
+#first p:last-child {
+    font-weight: bolder;
+}
+
+#pseudo_elements::first-letter {
+    font-size: 40px;
+    color: coral;
+}
+
+#pseudo_elements::before {
+    content: "Read This: ";
+    font-weight: bolder;
+}
+
+#pseudo_elements::after {
+    content: " Remember This";
+    color: blueviolet;
+}
+
+#highlight::selection {
+    background-color: yellow;
+    color: darkgreen;
+}
+
+li::marker {
+    color: crimson;
+    font-size: 20px;
+}
+
+#hidden {
+    display: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#hiding {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+#hiding:hover p {
+    display: block;
+}
