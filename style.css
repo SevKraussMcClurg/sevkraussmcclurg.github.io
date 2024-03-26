@@ -7,7 +7,7 @@ body {
     background-color: #6C8C86;
 }
 
-.githublink :hover {
+.githublink:hover {
     background-color: #387373;
 }
 
@@ -30,7 +30,7 @@ td {
     font-size: 30px;
 }
 
-tr :hover {
+tr:hover {
     background-color: rgb(136, 162, 149)
 }
 
@@ -50,6 +50,7 @@ h1 {
     text-align: center;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
+    color: black;
 }
