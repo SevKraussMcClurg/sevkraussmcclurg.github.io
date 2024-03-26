@@ -109,6 +109,8 @@ td {
     width: 48%;
     padding: 10px;
     color: #f5ece1;
+    line-height: 30px;
+    word-spacing: 2px;
 }
 
 #gallery tr td img {
