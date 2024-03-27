@@ -1,0 +1,41 @@
+body {
+    background-image: url(../images/background.avif);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container { /* https://stackoverflow.com/questions/10707253/css-full-screen-div-with-text-in-the-middle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.shop {
+    background-color: rgb(227, 246, 219);
+    border-width: 2px;
+    border-color: darkslategray;
+    border-style: solid;
+    width: 280px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop p {
+    font-size: 40px;
+}
+
+.shop:hover {
+    width: 315px;
+    height: 90px;
+}
+
+.shop:hover p {
+    font-size: 45px;
+}
