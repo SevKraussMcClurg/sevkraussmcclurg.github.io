@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkslategrey;
+}
+
+h1 {
+    font-size: 5.8vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 1.8vw;
+}
+
+p, a {
+    font-size: 1.6vw;
+}
+
+.container {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header {
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+}
+
+.left {
+    float: left;
+    width: 20%;
+}
+
+.nav a {
+    background-color: bisque;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    color: darkslateblue;
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+
+.right {
+    float: left;
+    width: 20%;
+    background-color: bisque;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.halfleft {
+    float: left;
+    width: 50%;
+    background-color: lightblue;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.halfright {
+    float: left;
+    width: 50%;
+    background-color: lightblue;   
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer {
+    background-color: bisque;
+    color: darkslategray;
+    padding: 10px;
+    clear: both;
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (min-width:621px) and (max-width:1000px) {
+    .main {
+        width: 80%;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .left, .main, .right {
+        width: 100%;
+    }
+}
