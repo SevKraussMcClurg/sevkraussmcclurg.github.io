@@ -2,13 +2,10 @@
     box-sizing: border-box;
 }
 
-.menu-item {
-    color: blue;
-}
-
 li {
     float: left;
     align-content: center;
+    background-color: darkslateblue;
 }
 
 li a {
@@ -17,7 +14,6 @@ li a {
     text-decoration: none;
     display: block;
     text-align: center;
-    background-color: darkslateblue;
 }
 
 ul {
@@ -74,5 +70,5 @@ nav {
 }
 
 img {
-    width: 30vw;
+    width: 20vw;
 }
