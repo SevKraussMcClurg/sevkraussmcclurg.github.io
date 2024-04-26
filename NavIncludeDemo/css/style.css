@@ -48,6 +48,7 @@ h1, p {
     width: 100%;
     font-size: 30px;
     background-color: darkslategray;
+    padding: 8px;
 }
 
 .text1, .picture2 {
