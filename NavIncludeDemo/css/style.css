@@ -38,12 +38,15 @@ nav {
     color: azure;
 }
 
+h1, p {
+    color: azure;
+}
+
 .title {
     float: left;
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
     background-color: darkslategray;
-    color: azure;
 }
 
 .text1, .picture1 {
@@ -53,7 +56,6 @@ nav {
     padding: 8px;
     background-color: darkslategray;
     font-size: 20px;
-    color: azure;
     text-align: center;
 }
 
