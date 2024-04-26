@@ -1,3 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
 .menu-item {
     color: blue;
+}
+
+li {
+    float: left;
+    align-content: center;
+}
+
+li a {
+    padding: 12px 20px; 
+    color: #ffce5c; 
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav {
+    display: grid;
+    font-size: 30px;
+    align-content: center;
+    padding-bottom: 10px;
+}
+
+.body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: azure;
+}
+
+.title {
+    float: left;
+    width: 100%;
+    font-size: 50px;
+    background-color: darkslategray;
+}
+
+.text1, .text2, .picture1, .picture2 {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: darkslategray;
+    font-size: 20px;
+}
+
+img {
+    width: 500px;
 }
