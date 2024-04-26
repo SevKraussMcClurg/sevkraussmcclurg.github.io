@@ -5,7 +5,8 @@
 li {
     float: left;
     align-content: center;
-    background-color: darkslateblue;
+    background-color: darkslategrey;
+    margin: 10px 0px;
 }
 
 li a {
@@ -33,7 +34,7 @@ nav {
     padding-bottom: 10px;
 }
 
-.body {
+.container {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: azure;
 }
@@ -49,7 +50,7 @@ h1, p {
     background-color: darkslategray;
 }
 
-.text1, .picture1 {
+.text1, .picture2 {
     float: left;
     width: 50%;
     margin-top: 10px;
@@ -59,7 +60,7 @@ h1, p {
     text-align: center;
 }
 
-.text2, .picture2 {
+.text2, .picture1 {
     float: left;
     width: 50%;
     margin-top: 10px;
@@ -72,5 +73,5 @@ h1, p {
 }
 
 img {
-    width: 20vw;
+    width: 30vw;
 }
