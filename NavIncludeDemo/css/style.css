@@ -44,19 +44,34 @@ nav {
 .title {
     float: left;
     width: 100%;
-    font-size: 50px;
+    font-size: 40px;
     background-color: darkslategray;
+    color: azure;
 }
 
-.text1, .text2, .picture1, .picture2 {
+.text1, .picture1 {
     float: left;
     width: 50%;
     margin-top: 10px;
     padding: 8px;
     background-color: darkslategray;
     font-size: 20px;
+    color: azure;
+    text-align: center;
+}
+
+.text2, .picture2 {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 8px;
+    background-color: darkslategray;
+    font-size: 20px;
+    color: azure;
+    text-align: center;
 }
 
 img {
-    width: 50vw;
+    width: 30vw;
 }
