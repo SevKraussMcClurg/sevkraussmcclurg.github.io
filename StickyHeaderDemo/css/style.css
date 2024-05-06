@@ -81,7 +81,7 @@ nav a:hover {
     padding: 20px;
 }
 
-.left {
+.home-left {
     float: left;
     width: 20%;
 }
@@ -94,16 +94,16 @@ nav a:hover {
     margin-top: 10px;
     text-align: center;
     width: 100%;
-    color: darkslateblue;
+    color: darkslategrey;
 }
 
-.main {
+.home-main {
     float: left;
     width: 60%;
     padding: 0 20px;
 }
 
-.right {
+.home-right {
     float: left;
     width: 20%;
     background-color: bisque;
@@ -111,33 +111,30 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.halfleft {
+.about-left {
     float: left;
-    width: 50%;
-    background-color: lightblue;
+    width: 20%;
+    background-color: bisque;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+    color: darkslategrey;
+}
+
+.about-main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+
+.about-right {
+    float: left;
+    width: 20%;
+    background-color: bisque;
     padding: 15px;
     margin-top: 10px;
-    text-align: center;
-}
-
-.halfright {
-    float: left;
-    width: 50%;
-    background-color: lightblue;   
-    padding: 15px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.image {
-    float: left;
-    width: 100%;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.picture {
-    width: 50vw;
 }
 
 .footer {
