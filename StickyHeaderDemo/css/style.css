@@ -137,6 +137,35 @@ nav a:hover {
     margin-top: 10px;
 }
 
+.gallery-main {
+    float: left;
+    width: 80%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.grid-container {
+    width: 100%;
+}
+
+.container-box {
+    width: 50%;
+    float: left;
+    margin-bottom: 3vw;
+}
+
+.container-box img {
+    width: 32vw;
+}
+
+.gallery-right {
+    float: left;
+    width: 20%;
+    background-color: bisque;
+    padding: 15px;
+    margin-top: 10px;
+}
+
 .footer {
     background-color: bisque;
     color: darkslategray;
