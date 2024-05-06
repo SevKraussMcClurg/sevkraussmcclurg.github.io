@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkslategrey;
+}
+
+h1 {
+    font-size: 5.8vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 1.8vw;
+}
+
+p, a {
+    font-size: 1.6vw;
+}
+
+.logo {
+    float: left;
+    width: 30%;
+    padding-left: 20px;
+}
+
+.logo-image {
+    height: 5.6vw;
+}
+
+nav {
+    float: left;
+    width: 70%;
+    text-align: right;
+    padding: 2vw 6vw;
+}
+
+nav a {
+    margin-left: 4vw;
+    text-decoration: none;
+    color: darkslategrey;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: rgb(84, 128, 128);
+    font-weight: 900;
+}
+
+.nav {
+    height: 10vw;
+    background-color: rgb(255, 192, 169);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: -4vw;
+    margin-bottom: 1vw;
+}
+
+.nav-inner {
+    float: left;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+.container {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header {
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+}
+
+.left {
+    float: left;
+    width: 20%;
+}
+
+.side-nav a {
+    background-color: bisque;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    color: darkslateblue;
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+
+.right {
+    float: left;
+    width: 20%;
+    background-color: bisque;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.halfleft {
+    float: left;
+    width: 50%;
+    background-color: lightblue;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.halfright {
+    float: left;
+    width: 50%;
+    background-color: lightblue;   
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.picture {
+    width: 50vw;
+}
+
+.footer {
+    background-color: bisque;
+    color: darkslategray;
+    padding: 10px;
+    clear: both;
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (min-width:621px) and (max-width:1000px) {
+    .main {
+        width: 80%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .halfleft, .halfright {
+        width: 100%;
+    }
+
+    .picture {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .left, .main, .right, .halfleft, .halfright {
+        width: 100%;
+    }
+
+    .picture {
+        width: 80vw;
+    }
+}
