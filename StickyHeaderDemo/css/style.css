@@ -16,6 +16,10 @@ h2 {
 }
 
 h3 {
+    font-size: 2vw;
+}
+
+h4 {
     font-size: 1.8vw;
 }
 
@@ -72,13 +76,13 @@ nav a:hover {
 .container {
     float: left;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 .header {
     background-color: bisque;
     text-align: center;
-    padding: 20px;
+    padding: 0.8vw;
 }
 
 .home-left {
@@ -90,8 +94,8 @@ nav a:hover {
     background-color: bisque;
     text-decoration: none;
     display: block;
-    padding: 8px;
-    margin-top: 10px;
+    padding: 0.8vw;
+    margin-top: 1vw;
     text-align: center;
     width: 100%;
     color: darkslategrey;
@@ -100,15 +104,15 @@ nav a:hover {
 .home-main {
     float: left;
     width: 60%;
-    padding: 0 20px;
+    padding: 0 2vw;
 }
 
 .home-right {
     float: left;
     width: 20%;
     background-color: bisque;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 1.5vw;
+    margin-top: 1vw;
 }
 
 .about-left {
@@ -117,8 +121,8 @@ nav a:hover {
     background-color: bisque;
     text-decoration: none;
     display: block;
-    padding: 8px;
-    margin-top: 10px;
+    padding: 0.4vw;
+    margin-top: 1vw;
     text-align: center;
     color: darkslategrey;
 }
@@ -126,21 +130,46 @@ nav a:hover {
 .about-main {
     float: left;
     width: 60%;
-    padding: 0 20px;
+    padding: 0 2vw;
 }
 
 .about-right {
     float: left;
     width: 20%;
     background-color: bisque;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 1.5vw;
+    margin-top: 1vw;
+}
+
+.photo-container {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.photo-box {
+    float: left;
+    width: 25%;
+    margin-top: 1vw;
+}
+
+.photo-box img {
+    width: 16vw; 
+    height: 16vw; 
+    object-fit: cover;
+    object-position: 40%; /* cropping CSS from https://cloudinary.com/guides/automatic-image-cropping/5-ways-to-crop-images-in-html-css */
+    border: 0.6em outset darkslategray;
+}
+
+.photo-box h4 {
+    margin-top: -0.1%;
+    margin-bottom: 1vw;
 }
 
 .gallery-main {
     float: left;
     width: 80%;
-    padding: 0 20px;
+    padding: 0 2vw;
     text-align: center;
 }
 
@@ -162,20 +191,21 @@ nav a:hover {
     float: left;
     width: 20%;
     background-color: bisque;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 1.5vw;
+    margin-top: 1vw;
 }
 
 .footer {
     background-color: bisque;
     color: darkslategray;
-    padding: 10px;
+    padding: 1vw;
     clear: both;
 }
 
 footer {
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
+    text-align: right;
+    font-size: 1.2vw;
 }
 
 @media (min-width:621px) and (max-width:1000px) {
