@@ -5,6 +5,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: darkslategrey;
+    background-color: rgb(255, 244, 230);
 }
 
 h1 {
@@ -20,7 +21,8 @@ h3 {
 }
 
 h4 {
-    font-size: 1.8vw;
+    font-size: 1.4vw;
+    font-weight: 600;
 }
 
 p, a {
@@ -30,7 +32,8 @@ p, a {
 .logo {
     float: left;
     width: 30%;
-    padding-left: 20px;
+    padding-left: 2vw;
+    align-items: center;
 }
 
 .logo-image {
@@ -62,7 +65,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     position: sticky;
-    top: -4vw;
+    top: -3vw;
     margin-bottom: 1vw;
 }
 
@@ -71,6 +74,9 @@ nav a:hover {
     width: 100%;
     position: sticky;
     top: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -110,9 +116,22 @@ nav a:hover {
 .home-right {
     float: left;
     width: 20%;
+}
+
+.home-right-inner {
     background-color: bisque;
     padding: 1.5vw;
     margin-top: 1vw;
+}
+
+.home-image {
+    float: left;
+    width: 20%;
+    margin: 1vw 0;
+}
+
+.home-image img {
+    width: 100%;
 }
 
 .about-left {
@@ -127,6 +146,14 @@ nav a:hover {
     color: darkslategrey;
 }
 
+.about-left h3 {
+    margin-bottom: 1vw;
+}
+
+.about-left h4 {
+    margin-top: 1vw;
+}
+
 .about-main {
     float: left;
     width: 60%;
@@ -136,6 +163,9 @@ nav a:hover {
 .about-right {
     float: left;
     width: 20%;
+}
+
+.about-right-inner {
     background-color: bisque;
     padding: 1.5vw;
     margin-top: 1vw;
@@ -158,7 +188,7 @@ nav a:hover {
     height: 16vw; 
     object-fit: cover;
     object-position: 40%; /* cropping CSS from https://cloudinary.com/guides/automatic-image-cropping/5-ways-to-crop-images-in-html-css */
-    border: 0.6em outset darkslategray;
+    border: 0.6vw outset darkslategray;
 }
 
 .photo-box h4 {
@@ -180,16 +210,24 @@ nav a:hover {
 .container-box {
     width: 50%;
     float: left;
-    margin-bottom: 3vw;
+    margin-bottom: 1vw;
 }
 
 .container-box img {
     width: 32vw;
 }
 
+.caption {
+    font-style: italic;
+    font-size: 1.2vw;
+}
+
 .gallery-right {
     float: left;
     width: 20%;
+}
+
+.gallery-right-inner {
     background-color: bisque;
     padding: 1.5vw;
     margin-top: 1vw;
@@ -209,29 +247,225 @@ footer {
 }
 
 @media (min-width:621px) and (max-width:1000px) {
-    .main {
+    .home-main, .about-main {
         width: 80%;
     }
 
-    .right {
+    .home-right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-right-inner {
+        width: 50%;
+    }
+
+    .home-image {
+        width: 50%;
+        text-align: center;
+    }
+
+    .home-image img {
+        width: 50%;
+    }
+
+    .gallery-main, .gallery-right {
         width: 100%;
     }
 
-    .halfleft, .halfright {
+    .about-right {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    .picture {
-        width: 70vw;
+    .about-right-inner {
+        width: 50%;
+    }
+
+    .gallery-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-right-inner {
+        width: 50%;
     }
 }
 
 @media only screen and (max-width:620px) {
-    .left, .main, .right, .halfleft, .halfright {
+    .home-main, .home-left, .about-main, .gallery-main, .gallery-right {
         width: 100%;
     }
 
-    .picture {
-        width: 80vw;
+    .home-right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-right-inner {
+        width: 50%;
+    }
+
+    .home-image {
+        width: 50%;
+        text-align: center;
+    }
+
+    .home-image img {
+        width: 50%;
+    }
+
+    .about-left {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    .about-left h3 {
+        margin-top: 1vw;
+        margin-bottom: 0;
+    }
+
+    .about-left h4 {
+        margin-bottom: 1vw;
+    }
+
+    #title {
+        grid-column: 1 / span 5;
+        grid-row: 1;
+        margin-bottom: 1vw;
+    }
+
+    #kelly {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #ceo {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #sallie {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #cfo {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #cyrus {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #staff1 {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    #lara {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    #staff2 {
+        grid-column: 4;
+        grid-row: 3;
+    }
+
+    #willard {
+        grid-column: 5;
+        grid-row: 2;
+    }
+
+    #staff3 {
+        grid-column: 5;
+        grid-row: 3;
+    }
+
+    #emma {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #staff4 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #nicola {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    #staff5 {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    #leonie {
+        grid-column: 3;
+        grid-row: 4;
+    }
+
+    #staff6 {
+        grid-column: 3;
+        grid-row: 5;
+    }
+
+    #savanna {
+        grid-column: 4;
+        grid-row: 4;
+    }
+
+    #staff7 {
+        grid-column: 4;
+        grid-row: 5;
+    }
+
+    #jeffrey {
+        grid-column: 5;
+        grid-row: 4;
+    }
+
+    #staff8 {
+        grid-column: 5;
+        grid-row: 5;
+    }
+
+    .photo-box {
+        width: 50%;
+    }
+
+    .photo-box img {
+        height: 22vw;
+        width: 22vw;
+    }
+
+    .about-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-right-inner {
+        width: 50%;
+    }
+
+    .gallery-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-right-inner {
+        width: 50%;
     }
 }
