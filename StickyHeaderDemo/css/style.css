@@ -29,57 +29,64 @@ p, a {
     font-size: 1.6vw;
 }
 
-.logo {
-    float: left;
-    width: 30%;
-    padding-left: 2vw;
-    align-items: center;
+.logo { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+    order: 1;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
 }
 
-.logo-image {
-    height: 5.6vw;
+.logo-image { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+    height: 3rem;
+    margin-left: 2rem;
 }
 
-nav {
-    float: left;
-    width: 70%;
-    text-align: right;
-    padding: 2vw 6vw;
+nav { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+    order: 2;
+    display: flex;
 }
 
-nav a {
-    margin-left: 4vw;
+nav a { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: darkslategrey;
     font-weight: 600;
+    transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
+nav a:hover { 
     color: rgb(84, 128, 128);
-    font-weight: 900;
+    transition: color 0.3s ease-in-out; /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
 }
 
-.nav {
-    height: 10vw;
-    background-color: rgb(255, 192, 169);
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: -3vw;
-    margin-bottom: 1vw;
-}
-
-.nav-inner {
-    float: left;
-    width: 100%;
+.nav { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
     position: sticky;
     top: 0px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    background: rgb(255, 192, 169);
+    color: darkslategray;
+    opacity: 0.85;
+    height: 80px;
+    z-index: 12;
+    margin-bottom: 2vw;
+    box-shadow: 0px 5px 10px 0px rgb(248, 171, 143);
 }
 
-.container {
+.nav-inner { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+    display: flex;
+    justify-content: space-between;
+    height: 94px;
+    align-items: center;
+    margin-right: 4vw;
+}
+
+.nav input[type="checkbox"], .nav .hamburger-lines { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+  display: none;
+}
+
+.container { 
     float: left;
     width: 100%;
     margin-bottom: 1vw;
@@ -296,6 +303,133 @@ footer {
 }
 
 @media only screen and (max-width:620px) {
+    h1 {
+        font-size: 9vw;
+    }
+    
+    h2 {
+        font-size: 6vw;
+    }
+    
+    h3 {
+        font-size: 5vw;
+    }
+    
+    h4 {
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    
+    p, a {
+        font-size: 4vw;
+    }
+
+    .nav { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        opacity: 0.95;
+    }
+
+    .nav-inner input[type="checkbox"], .nav-inner .hamburger-lines { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+      display: block;
+    }
+
+    .nav-inner { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .nav-inner input[type="checkbox"] { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 4vh;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    }
+
+    .nav-inner .hamburger-lines { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        display: block;
+        height: 23px;
+        width: 35px;
+        position: absolute;
+        top: 5vh;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav-inner .hamburger-lines .line { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: darkslategray;
+    }
+
+    .nav-inner .hamburger-lines .line1 { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .nav-inner .hamburger-lines .line2 { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .nav-inner .hamburger-lines .line3 { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    nav { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        padding-top: 100px;
+        background-color: rgb(255, 192, 169);
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px rgb(248, 171, 143);
+    }
+
+    nav a { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .nav-inner input[type="checkbox"]:checked ~ nav { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        transform: translateX(0);
+    }
+    
+    .nav-inner input[type="checkbox"]:checked ~ .hamburger-lines .line1 { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        transform: rotate(35deg);
+    }
+    
+    .nav-inner input[type="checkbox"]:checked ~ .hamburger-lines .line2 { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        transform: scaleY(0);
+    }
+    
+    .nav-inner input[type="checkbox"]:checked ~ .hamburger-lines .line3 { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        transform: rotate(-35deg);
+    }
+
+    .logo { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
+        position: absolute;
+        top: 2.7vh;
+        right: 2vh;
+    }
+
+    .logo-image {
+        float: right;
+    }
+    
     .home-main, .home-left, .about-main, .gallery-main, .gallery-right {
         width: 100%;
     }
@@ -304,10 +438,11 @@ footer {
         width: 50%;
         display: flex;
         justify-content: center;
+        margin-bottom: 2vw;
     }
 
     .home-right-inner {
-        width: 50%;
+        width: 90%;
     }
 
     .home-image {
@@ -316,13 +451,13 @@ footer {
     }
 
     .home-image img {
-        width: 50%;
+        width: 86%;
     }
 
     .about-left {
         width: 100%;
         display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-columns: 25% 25% 25% 25%;
     }
 
     .about-left h3 {
@@ -335,7 +470,7 @@ footer {
     }
 
     #title {
-        grid-column: 1 / span 5;
+        grid-column: 1 / span 4;
         grid-row: 1;
         margin-bottom: 1vw;
     }
@@ -381,63 +516,63 @@ footer {
     }
 
     #willard {
-        grid-column: 5;
-        grid-row: 2;
+        grid-column: 1;
+        grid-row: 4;
     }
 
     #staff3 {
-        grid-column: 5;
-        grid-row: 3;
+        grid-column: 1;
+        grid-row: 4;
     }
 
     #emma {
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 4;
     }
 
     #staff4 {
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 5;
     }
 
     #nicola {
-        grid-column: 2;
+        grid-column: 3;
         grid-row: 4;
     }
 
     #staff5 {
-        grid-column: 2;
+        grid-column: 3;
         grid-row: 5;
     }
 
     #leonie {
-        grid-column: 3;
+        grid-column: 4;
         grid-row: 4;
     }
 
     #staff6 {
-        grid-column: 3;
+        grid-column: 4;
         grid-row: 5;
     }
 
     #savanna {
-        grid-column: 4;
-        grid-row: 4;
+        grid-column: 2;
+        grid-row: 6;
     }
 
     #staff7 {
-        grid-column: 4;
-        grid-row: 5;
+        grid-column: 2;
+        grid-row: 7;
     }
 
     #jeffrey {
-        grid-column: 5;
-        grid-row: 4;
+        grid-column: 3;
+        grid-row: 6;
     }
 
     #staff8 {
-        grid-column: 5;
-        grid-row: 5;
+        grid-column: 3;
+        grid-row: 7;
     }
 
     .photo-box {
@@ -445,27 +580,37 @@ footer {
     }
 
     .photo-box img {
-        height: 22vw;
-        width: 22vw;
+        height: 30vw;
+        width: 30vw;
     }
 
     .about-right {
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 2vw;
     }
 
     .about-right-inner {
         width: 50%;
     }
 
+    .container-box img {
+        width: 88%;
+    }
+
     .gallery-right {
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 2vw;
     }
 
     .gallery-right-inner {
-        width: 50%;
+        width: 60%;
+    }
+
+    .caption {
+        font-size: 2.6vw;
     }
 }
