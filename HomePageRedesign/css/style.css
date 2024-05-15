@@ -16,16 +16,17 @@ nav { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
 nav a { /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
     list-style: none;
     margin-left: 4rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-decoration: none;
     color: rgb(75, 75, 71);;
     font-weight: 600;
     transition: color 0.3s ease-in-out;
     font-style: italic;
+    letter-spacing: 2px;
 }
 
 nav a:hover { 
-    color: rgb(113, 113, 106);;
+    color: rgb(93, 93, 84);;
     transition: color 0.3s ease-in-out; /*https://codepen.io/alvarotrigo/pen/XWejzjR*/
 }
 
@@ -34,7 +35,7 @@ nav a:hover {
     top: 0px;
     width: 100%;
     color: rgb(75, 75, 71);
-    background-color: rgb(197, 197, 183);
+    background-color: rgba(163, 163, 151, 0.97);
     height: 60px;
     z-index: 12;
     margin-bottom: 10px;
@@ -56,12 +57,14 @@ nav a:hover {
 .header h1 {
     font-size: 80px;
     margin: 0px;
+    letter-spacing: 4px;
 }
 
 .header h4 {
     font-size: 14px;
     font-style: italic;
     margin: 2px;
+    letter-spacing: 6px;
 }
 
 .floating {
@@ -79,7 +82,7 @@ nav a:hover {
 .mission {
     position: absolute;
     width: 800px;
-    height: 520px;
+    height: 505px;
     background-color: rgba(197, 197, 183, 0.97);
     right: 30px;
     top: 80px;
@@ -88,7 +91,7 @@ nav a:hover {
 .mission-inner {
     border: 2px black solid;
     width: 760px;
-    height: 480px;
+    height: 465px;
     margin: 20px;
 }
 
@@ -96,25 +99,31 @@ nav a:hover {
     font-size: 50px;
     font-style: italic;
     margin: 16px auto 10px;
+    letter-spacing: 4px;
 }
 
 .mission p {
     margin: 0px;
+    font-size: 18px;
 }
 
 .mission h2, .mission p {
-    padding: 20px 26px;
+    padding: 10px 26px;
+}
+
+.name {
+    font-weight: 600;
 }
 
 .services {
     position: relative;
-    height: 500px;
+    height: 440px;
 }
 
 .info {
     position: absolute;
     width: 800px;
-    height: 320px;
+    height: 280px;
     background-color: rgba(197, 197, 183, 0.97);
     left: 30px;
 }
@@ -122,7 +131,7 @@ nav a:hover {
 .info-inner {
     border: 2px black solid;
     width: 760px;
-    height: 280px;
+    height: 240px;
     margin: 20px;
 }
 
@@ -130,21 +139,23 @@ nav a:hover {
     font-size: 50px;
     font-style: italic;
     margin: 16px auto 10px;
+    letter-spacing: 4px;
 }
 
 .info p {
     margin: 0px;
+    font-size: 18px;
 }
 
 .info h2, .info p {
-    padding: 20px 150px 20px 26px;
+    padding: 10px 150px 10px 26px;
 }
 
 .pricing {
     position: absolute;
     width: 540px;
-    height: 370px;
-    background-color: rgb(75, 75, 71);
+    height: 360px;
+    background-color: rgba(75, 75, 71, 0.97);
     right: 30px;
     top: 50px;
 }
@@ -152,7 +163,7 @@ nav a:hover {
 .pricing-inner {
     border: 2px rgb(197, 197, 183) solid;
     width: 500px;
-    height: 330px;
+    height: 320px;
     margin: 20px;
     color: rgb(197, 197, 183);
     padding: 60px;
@@ -178,17 +189,22 @@ nav a:hover {
 .footer {
     background-color: rgba(197, 197, 183, 0.97);
     color: rgb(75, 75, 71);
-    padding: 10px;
     bottom: 0px;
     position: relative;
-    height: 220px;
+    height: 270px;
+    width: 100%;
 }
 
 footer {
-    width: 100%;
+    width: 1206.67px;
     line-height: 26px;
     background-color: rgba(197, 197, 183, 0.97);
     color: rgb(75, 75, 71);
+    margin: 20px;
+    border: 2px black solid;
+    height: 230px;
+    position: absolute;
+    padding: 10px 26px;
 }
 
 footer h2 {
