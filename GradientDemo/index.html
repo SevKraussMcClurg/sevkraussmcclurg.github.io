@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krauss-McClurg | Gradient Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gradient Demo</h1>
+        </div>
+
+        <div class="main">
+            <h3>Welcome to my demo on how to use gradients</h3>
+            <h4>Content From <a href="https://css-tricks.com/a-complete-guide-to-css-gradients/">css-tricks.com</a></h4>
+            <p>There are 3 types of gradients: linear, radial, and conic. Here are what they look like and the code for
+                them.</p>
+            <div class="basic-gradients">
+                <div class="linear">
+                    <h2>Linear</h2>
+                </div>
+
+                <div class="linear-code">
+                    <pre>
+                        <code>
+.linear {
+    background-image: 
+        linear-gradient(
+            #b7f6f7, #ff80ea
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="radial">
+                    <h2>Radial</h2>
+                </div>
+
+                <div class="radial-code">
+                    <pre>
+                        <code>
+.radial {
+    background-image: 
+        radial-gradient(
+            #b7f6f7, #ff80ea
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="conic">
+                    <h2>Conic</h2>
+                </div>
+
+                <div class="conic-code">
+                    <pre>
+                        <code>
+.conic {
+    background-image: 
+        conic-gradient(
+            #b7f6f7, #ff80ea
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <h3>Linear Gradient Options</h3>
+            <p>You can also specify the direction of linear gradients by using terminology like "to top right" or
+                "90deg"</p>
+            <div class="linear-options">
+                <div class="linear-top-right"></div>
+                <div class="lienar-top-right-code">
+                    <pre>
+                    <code>
+.linear {
+    background-image: 
+        linear-gradient(
+            to top right, #b7f6f7, #ff80ea
+        );
+}
+                    </code>
+                </pre>
+                </div>
+                <div class="linear-degree"></div>
+                <div class="linear-degree-code">
+                    <pre>
+                    <code>
+.linear {
+    background-image: 
+        linear-gradient(
+            90deg, #b7f6f7, #ff80ea
+        );
+}
+                    </code>
+                    </pre>
+                </div>
+            </div>
+            <p>You can also use more colors, just seperate them by commas</p>
+            <div class="multiple-colors">
+                <div class="linear-multiple-colors"></div>
+                <div class="linear-multiple-colors-code">
+                    <pre>
+                        <code>
+.linear {
+    background-image: 
+        linear-gradient(
+            red, yellow, green, blue
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <h3>Radial Gradient Options</h3>
+            <p>Radial gradients have a gradient that starts at a specific point and radiate out from there. You are able
+                to specify between a circle or ellipse shape (cicles work well for perfect squares and ellipses work
+                well for rectangles). CSS will automatically choose the one that matches the box shape you have but you
+                can also specify it if you wanted.</p>
+
+            <div class="circle">
+                <div class="radial-circle"></div>
+                <div class="radial-circle-code">
+                    <pre>
+                        <code>
+.radial {
+    background-image: 
+        radial-gradient(
+            circle, #b7f6f7, #ff80ea
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <p>Similarly to linear gradients, you can specify the starting point in radial gradients</p>
+            <div class="circle-bottom">
+                <div class="radial-circle-bottom"></div>
+                <div class="radial-circle-bottom-code">
+                    <pre>
+                            <code>
+.radial {
+    background-image: 
+        radial-gradient(
+            circle at bottom, #b7f6f7, #ff80ea
+        );
+}
+                            </code>
+                        </pre>
+                </div>
+            </div>
+
+            <p>Also similarly to linear gradients, you can also add more colors in radial gradients</p>
+            <div class="radial-multiple-colors">
+                <div class="radial-colors"></div>
+                <div class="radial-colors-code">
+                    <pre>
+                            <code>
+.radial {
+    background-image: 
+        radial-gradient(
+            red, yellow, green, blue
+        );
+}
+                            </code>
+                        </pre>
+                </div>
+            </div>
+
+            <h3>Conic Gradient Options</h3>
+            <p>Conic gradients look like a cone when viewed from above. CSS will assume that each color is spaced evenly if you don't specify angles (in degrees or percentages). Here is an example of specified angles.</p>
+            <div class="angles">
+                <div class="conic-angles-circle"></div>
+                <div class="conic-angles-rectangle"></div>
+                <div class="conic-angles-code">
+                    <pre>
+                            <code>
+.conic {
+    background-image: 
+        conic-gradient(
+            #b7f6f7 0 30%, #ff80ea 30% 70%, #ff6a6a 80% 0
+        );
+}
+                            </code>
+                        </pre>
+                </div>
+            </div>
+
+            <p>Yet again, you can use more than 2 colors and if you end with the same color you start with, you are able to remove the harsh line.</p>
+            <div class="rainbow-circle">
+                <div class="conic-rainbow-circle"></div>
+                <div class="conic-rainbow-circle-code">
+                    <pre>
+                        <code>
+.conic {
+    background-image: 
+        conic-gradient(
+            red, orange, yellow, green, blue, magenta, red
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <h3>Repeating Gradients</h3>
+            <p>You can have gradients repeat which can create interesting patterns.</p>
+            <div class="repeating-patterns">
+                <div class="linear-repeating"></div>
+                <div class="linear-repeating-code">
+                    <pre>
+                        <code>
+.linear {
+    background-image: 
+        repeating-linear-gradient(
+            45deg, #b7f6f7, #b7f6f7 10px, #ff80ea 10px, #ff80ea 20px
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+                <div class="radial-repeating"></div>
+                <div class="radial-repeating-code">
+                    <pre>
+                        <code>
+.radial {
+    background-image: 
+        repeating-radial-gradient(
+            circle at 0 0, #b7f6f7, #b7f6f7 10px, #ff80ea 10px, #ff80ea 20px
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+                <div class="conic-repeating"></div>
+                <div class="conic-repeating-code">
+                    <pre>
+                        <code>
+.conic {
+    background-image: 
+        repeating-conic-gradient(
+            from 0deg, #b7f6f7 0 30deg, #ff80ea 30deg 60deg
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <h3>Other Patterns</h3>
+            <h3>Checkerboard</h3>
+            <div class="checkerboard">
+                <div class="checkerboard-gradient"></div>
+                <div class="checkerboard-gradient-code">
+                    <pre>
+                        <code>
+.checkerboard {
+    background-color: #fff;
+
+    background-image: 
+        linear-gradient(
+            45deg, #333 25%, transparent 25%, transparent 75%, #333 75%, #333
+        ),
+        
+        linear-gradient(
+            -45deg, #333 25%, transparent 25%, transparent 75%, #333 75%, #333
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <h3>Chevron</h3>
+            <div class="chevron">
+                <div class="chevron-gradient"></div>
+                <div class="chevron-gradient-code">
+                    <pre>
+                        <code>
+.chevron {
+    background-color: #b7f6f7;
+
+    background-size: 50px 50px;
+
+    background: 
+        linear-gradient(
+            135deg, #ff80ea 25%, transparent 25%
+        ) -25px 0,
+
+        linear-gradient(
+            225deg, #ff80ea 25%, transparent 25%
+        ) -25px 0,
+
+        linear-gradient(
+            315deg, #ff80ea 25%, transparent 25%
+        ),
+
+        linear-gradient(
+            45deg, #ff80ea 25%, transparent 25%
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <h3>Graph Paper</h3>
+            <div class="graphpaper">
+                <div class="graphpaper-gradient"></div>
+                <div class="graphpaper-gradient-code">
+                    <pre>
+                        <code>
+.graphpaper {
+    background-color: #eaeaea;
+
+    background-size: 20px 20px;
+
+    background-image: 
+        repeating-linear-gradient(
+            45deg,rgba(0, 191, 255, 0.5),rgba(0, 191, 255, 0.5) 1px, transparent 1px, transparent 15px
+        ),
+
+        repeating-linear-gradient(
+            -45deg,rgba(255, 105, 180, 0.5),rgba(255, 105, 180, 0.5) 1px, transparent 1px, transparent 15px
+        );
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+        <h3>Border Gradients</h3>
+            <div class="border-gradients">
+                <div class="border-gradient-normal">
+                    <div class="content">Normal linear gradient</div>
+                </div>
+                <div class="border-gradient-normal-code">
+                    <pre>
+                        <code>
+.border-gradient-normal {
+    background-image: linear-gradient(45deg, #b7f6f7,#ff80ea);
+    border-radius: 16px;
+    padding: 10px;
+    height: 108.6px;
+}
+                            
+.border-gradient-normal .content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    padding: 35px;
+    text-align: center;
+}
+                        </code>
+                    </pre>
+                </div>
+                <div class="border-gradient-dotted">
+                    <div class="content">Dotted radial gradient</div>
+                </div>
+                <div class="border-gradient-dotted-code">
+                    <pre>
+                        <code>
+.border-gradient-dotted {
+    background-image: radial-gradient(#b7f6f7, 35%, transparent 35%);
+    background-size: 8px 8px;
+    border-radius: 16px;
+    padding: 35px;
+    height: 158.6px;
+}
+                            
+.border-gradient-dotted .content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.55);
+    padding: 35px;
+    text-align: center;
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <h3>Animated Gradient</h3>
+            <h4>From <a href="https://codepen.io/P1N2O/pen/pyBNzX">Manuel Pinto on CodeOpen</a></h4>
+            <div class="animated">
+                <div class="animated-gradient"></div>
+                <div class="animated-gradient-code">
+                    <pre>
+                        <code>
+.animated-gradient {
+    animation: gradient 8s ease infinite;
+    background-image: linear-gradient(135deg, #b7f6f7, #44aaac, #ff93ed, #630053);
+    background-size: 400% 400%;
+}
+                            
+@keyframes gradient {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

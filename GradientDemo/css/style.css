@@ -1,0 +1,508 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+a {
+    color: rgb(240, 240, 240);
+    font-size: 22px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: rgb(54, 54, 54);
+    padding: 20px;
+    color: rgb(192, 192, 192);
+}
+
+pre code {
+    background-color: #b6b6b6;
+    border: 1px solid gray;
+    display: block;
+    color: rgb(46, 46, 46);
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+    font-size: 12px;
+}
+
+.basic-gradients {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    color: rgb(54, 54, 54);
+}
+
+.linear {
+    background-image: linear-gradient(#b7f6f7, #ff80ea);
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.linear-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.radial {
+    background-image: radial-gradient(#b7f6f7, #ff80ea);
+    grid-column: 2;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.radial-code {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.conic {
+    background-image: conic-gradient(#b7f6f7, #ff80ea);
+    grid-column: 3;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.conic-code {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.linear-options {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: rgb(54, 54, 54);
+}
+
+.linear-top-right {
+    background-image: linear-gradient(to top right, #b7f6f7, #ff80ea);
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.linear-top-right-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.linear-degree {
+    background-image: linear-gradient(90deg, #b7f6f7, #ff80ea);
+    grid-column: 2;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.linear-degree-code {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.multiple-colors {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 100%;
+    color: rgb(54, 54, 54);
+}
+
+.linear-multiple-colors {
+    background-image: linear-gradient(red, yellow, green, blue);
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.linear-multiple-colors-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.circle {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 100%;
+    color: rgb(54, 54, 54);
+}
+
+.radial-circle {
+    background-image: radial-gradient(circle, #b7f6f7, #ff80ea);
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.radial-circle-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.circle-bottom {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 100%;
+    color: rgb(54, 54, 54);
+}
+
+.radial-circle-bottom {
+    background-image: radial-gradient(circle at bottom, #b7f6f7, #ff80ea);
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.radial-circle-bottom-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.radial-multiple-colors {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 100%;
+    color: rgb(54, 54, 54);
+}
+
+.radial-colors {
+    background-image: radial-gradient(red, yellow, green, blue);
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.radial-colors-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.angles {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: rgb(54, 54, 54);
+}
+
+.conic-angles-circle {
+    background-image: conic-gradient(#b7f6f7 0 30%, #ff80ea 30% 70%, #ff6a6a 70% 0);
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+.conic-angles-rectangle {
+    background-image: conic-gradient(#b7f6f7 0 30%, #ff80ea 30% 70%, #ff6a6a 70% 0);
+    grid-column: 2;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.conic-angles-code {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.rainbow-circle {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 100%;
+    color: rgb(54, 54, 54);
+}
+
+.conic-rainbow-circle {
+    background-image: conic-gradient(red, orange, yellow, green, blue, magenta, red);
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+.conic-rainbow-circle-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.repeating-patterns {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    color: rgb(54, 54, 54);
+}
+
+.linear-repeating {
+    background-image: repeating-linear-gradient(45deg, #b7f6f7, #b7f6f7 10px, #ff80ea 10px, #ff80ea 20px);
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.linear-repeating-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.radial-repeating {
+    background-image: repeating-radial-gradient(circle at 0 0, #b7f6f7, #b7f6f7 10px, #ff80ea 10px, #ff80ea 20px);
+    grid-column: 2;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.radial-repeating-code {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.conic-repeating {
+    background-image: repeating-conic-gradient(from 0deg, #b7f6f7 0 30deg, #ff80ea 30deg 60deg);
+    grid-column: 3;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.conic-repeating-code {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.checkerboard {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 100%;
+    color: rgb(54, 54, 54);
+}
+
+.checkerboard-gradient {
+    background-color: #fff;
+    background-image: 
+        linear-gradient(
+            45deg, #333 25%, transparent 25%, transparent 75%, #333 75%, #333
+        ),
+        linear-gradient(
+            -45deg, #333 25%, transparent 25%, transparent 75%, #333 75%, #333
+        );
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+    background-size: 50px 50px;
+}
+
+.checkerboard-gradient-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.chevron {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 100%;
+    color: rgb(54, 54, 54);
+}
+
+.chevron-gradient {
+    background: 
+        linear-gradient(135deg, #ff80ea 25%, transparent 25%) -25px 0,
+        linear-gradient(225deg, #ff80ea 25%, transparent 25%) -25px 0,
+        linear-gradient(315deg, #ff80ea 25%, transparent 25%),
+        linear-gradient(45deg, #ff80ea 25%, transparent 25%);
+    background-size: 50px 50px;
+    background-color: #b7f6f7;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+}
+
+.chevron-gradient-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.graphpaper {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 100%;
+    color: rgb(54, 54, 54);
+}
+
+.graphpaper-gradient {
+    background-color: #eaeaea;
+    background-size: 20px 20px;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,rgba(0, 191, 255, 0.5),rgba(0, 191, 255, 0.5) 1px, transparent 1px, transparent 15px
+        ),
+
+        repeating-linear-gradient(
+            -45deg,rgba(255, 105, 180, 0.5),rgba(255, 105, 180, 0.5) 1px, transparent 1px, transparent 15px
+        );
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+}
+
+.graphpaper-gradient-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.border-gradients {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: rgb(54, 54, 54);
+    align-items: center;
+}
+
+.border-gradient-normal {
+    background-image: linear-gradient(45deg, #b7f6f7,#ff80ea);
+    border-radius: 16px;
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 108.6px;
+    text-align: center;
+    align-content: center;
+}
+
+.border-gradient-normal .content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    padding: 35px;
+    text-align: center;
+}
+
+.border-gradient-normal-code {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.border-gradient-dotted {
+    background-image: radial-gradient(#b7f6f7, 35%, transparent 35%);
+    background-size: 8px 8px;
+    border-radius: 16px;
+    padding: 35px;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 10px;
+    height: 158.6px;
+    text-align: center;
+    align-content: center;
+}
+
+.border-gradient-dotted .content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.55);
+    padding: 35px;
+    text-align: center;
+}
+
+.border-gradient-dotted-code {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.animated {
+    background-color: #8b8b8b;
+    display: grid;
+    grid-template-columns: 100%;
+    color: rgb(54, 54, 54);
+}
+
+.animated-gradient {
+    animation: gradient 8s ease infinite;
+    background-image: linear-gradient(135deg, #b7f6f7, #44aaac, #ff93ed, #630053);
+    background-size: 400% 400%;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    height: 200px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+.animated-gradient-code {
+    grid-column: 1;
+    grid-row: 2;
+}
