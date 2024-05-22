@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #575757;
+}
+
+h1, h2, h3, h4, p {
+    color: #CCC29C;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3.6em;
+}
+
+h3 {
+    font-size: 2.8em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.header {
+    display: block;
+    height: 5.2vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: #CCC29C;
+    margin: 1vw 1.8vw;
+    font-size: 2em;
+    float: right;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #818f5a;
+}
+
+.name {
+    float: left;
+    text-decoration: none;
+    color: #CCC29C;
+    margin: 1vw 1.8vw;
+    font-size: 2em;
+}
+
+.title {
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+.title h1 {
+    margin: 1vw;
+}
+
+.title h3 {
+    margin: 1vw;
+    font-style: italic;
+}
+
+.recent {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.recent p, .recent a {
+    color: #2e2e2e;
+}
+
+.recent h2 {
+    margin-left: 2vw;
+}
+
+.recent-fiddler {
+    float: left;
+    margin: 0vw 4vw 2vw;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.recent-fiddler .text {
+    background-color: #818f5a;
+}
+
+.recent-fiddler a {
+    display: block;
+    width: 26vw;
+    height: 4vw;
+    margin: 2vw 2vw 1vw;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.recent-fiddler a:hover {
+    border-bottom: 2px solid #3A7538;
+}
+
+.recent-fiddler p {
+    margin: 0vw 2vw;
+}
+
+.recent-fiddler img {
+    width: 100%;
+}
+
+.recent-addams {
+    float: left;
+    margin: 0vw 4vw 2vw;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.recent-addams .text {
+    background-color: #818f5a;
+}
+
+.recent-addams a {
+    display: block;
+    width: 26vw;
+    height: 4vw;
+    margin: 2vw 2vw 1vw;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.recent-addams a:hover {
+    border-bottom: 2px solid #3A7538;
+}
+
+.recent-addams p {
+    margin: 0vw 2vw;
+}
+
+.recent-addams img {
+    width: 100%;
+}
+
+.recent-radium {
+    float: left;
+    margin: 0vw 4vw 2vw;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.recent-radium .text {
+    background-color: #818f5a;
+}
+
+.recent-radium a {
+    display: block;
+    width: 26vw;
+    height: 4vw;
+    margin: 2vw 2vw 1vw;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.recent-radium a:hover {
+    border-bottom: 2px solid #3A7538;
+}
+
+.recent-radium p {
+    margin: 0vw 2vw;
+}
+
+.recent-radium img {
+    width: 100%;
+}
