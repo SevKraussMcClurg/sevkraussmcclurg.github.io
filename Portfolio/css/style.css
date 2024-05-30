@@ -1,10 +1,12 @@
+/*GENERAL*/
+
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: #575757;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "new-zen", sans-serif; /*Available weights: 300, 400, 700*/
 }
 
 h1, h2, h3, h4, p {
@@ -31,9 +33,12 @@ p {
     font-size: 1.2em;
 }
 
+/*NAVIGATION*/
+
 .header {
     display: block;
     height: 5.2vw;
+    border-bottom: 0.2em solid #2e2e2e;
 }
 
 nav a {
@@ -42,6 +47,8 @@ nav a {
     margin: 1vw 1.8vw;
     font-size: 2em;
     float: right;
+    font-weight: 300;
+    font-style: normal;
 }
 
 nav a:hover {
@@ -54,21 +61,31 @@ nav a:hover {
     color: #CCC29C;
     margin: 1vw 1.8vw;
     font-size: 2em;
+    font-weight: 600;
 }
+
+/*INDEX.HTML*/
 
 .title {
     float: right;
-    width: 100%;
+    width: 90%;
     text-align: right;
+    margin: 0vw 2vw;
 }
 
 .title h1 {
-    margin: 1vw;
+    margin: 1vw 1vw 0.4vw;
 }
 
 .title h3 {
-    margin: 1vw;
+    margin: 0.6vw 1vw 0.4vw;
+    font-weight: 700;
     font-style: italic;
+}
+
+.title h4 {
+    margin: 0.2vw 1vw;
+    font-weight: 300;
 }
 
 .recent {
@@ -77,15 +94,21 @@ nav a:hover {
     width: 100%;
 }
 
-.recent p, .recent a {
+.recent p, .recent a, .recent h4 {
     color: #2e2e2e;
 }
 
 .recent h2 {
-    margin-left: 2vw;
+    display: flex;
+    width: 90%;
+    margin: 0vw 4vw 2vw;
 }
 
-.recent-fiddler {
+.recent-item {
+    box-shadow: 0vw 0vw 2vw 0.8vw #2e2e2e;
+}
+
+.recent-item {
     float: left;
     margin: 0vw 4vw 2vw;
     display: flex;
@@ -93,99 +116,34 @@ nav a:hover {
     width: 90%;
 }
 
-.recent-fiddler .text {
+.recent-item .text {
     background-color: #818f5a;
     height: 20vw;
 }
 
-.recent-fiddler .text a {
+.recent-item .text a {
     display: block;
     width: 26vw;
     height: 4vw;
-    margin: 2vw 2vw 1vw;
-    font-size: 1.8em;
+    margin: 2vw 2vw 0.4vw;
+    font-size: 2.2em;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
 }
 
-.recent-fiddler a:hover {
+.recent-item a:hover {
     border-bottom: 2px solid #3A7538;
 }
 
-.recent-fiddler p {
-    margin: 0vw 2vw;
-}
-
-.recent-fiddler img {
-    height: 20vw;
-}
-
-.recent-addams {
-    float: left;
-    margin: 0vw 4vw 2vw;
-    display: flex;
-    height: 20vw;
-    width: 90%;
-}
-
-.recent-addams .text {
-    background-color: #818f5a;
-    height: 20vw;
-}
-
-.recent-addams .text a {
-    display: block;
-    width: 26vw;
-    height: 4vw;
-    margin: 2vw 2vw 1vw;
-    font-size: 1.8em;
-    text-decoration: none;
+.recent-item h4 {
+    margin: 0vw 2vw 1.4vw;
     font-weight: 600;
 }
 
-.recent-addams a:hover {
-    border-bottom: 2px solid #3A7538;
-}
-
-.recent-addams p {
+.recent-item p {
     margin: 0vw 2vw;
 }
 
-.recent-addams img {
-    height: 20vw;
-}
-
-.recent-radium {
-    float: left;
-    margin: 0vw 4vw 2vw;
-    display: flex;
-    height: 20vw;
-    width: 90%;
-}
-
-.recent-radium .text {
-    background-color: #818f5a;
-    height: 20vw;
-}
-
-.recent-radium .text a {
-    display: block;
-    width: 26vw;
-    height: 4vw;
-    margin: 2vw 2vw 1vw;
-    font-size: 1.8em;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.recent-radium a:hover {
-    border-bottom: 2px solid #3A7538;
-}
-
-.recent-radium p {
-    margin: 0vw 2vw;
-}
-
-.recent-radium img {
+.recent-item img {
     height: 20vw;
 }
