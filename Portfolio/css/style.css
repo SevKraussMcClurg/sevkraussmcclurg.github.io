@@ -4,6 +4,7 @@
 
 body {
     background-color: #575757;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1, h2, h3, h4, p {
@@ -11,19 +12,19 @@ h1, h2, h3, h4, p {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3.8em;
 }
 
 h2 {
-    font-size: 3.6em;
+    font-size: 3.2em;
 }
 
 h3 {
-    font-size: 2.8em;
+    font-size: 2.2em;
 }
 
 h4 {
-    font-size: 2em;
+    font-size: 1.4em;
 }
 
 p {
@@ -87,20 +88,22 @@ nav a:hover {
 .recent-fiddler {
     float: left;
     margin: 0vw 4vw 2vw;
-    display: grid;
-    grid-template-columns: 80% 20%;
+    display: flex;
+    height: 20vw;
+    width: 90%;
 }
 
 .recent-fiddler .text {
     background-color: #818f5a;
+    height: 20vw;
 }
 
-.recent-fiddler a {
+.recent-fiddler .text a {
     display: block;
     width: 26vw;
     height: 4vw;
     margin: 2vw 2vw 1vw;
-    font-size: 2em;
+    font-size: 1.8em;
     text-decoration: none;
     font-weight: 600;
 }
@@ -114,26 +117,28 @@ nav a:hover {
 }
 
 .recent-fiddler img {
-    width: 100%;
+    height: 20vw;
 }
 
 .recent-addams {
     float: left;
     margin: 0vw 4vw 2vw;
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: flex;
+    height: 20vw;
+    width: 90%;
 }
 
 .recent-addams .text {
     background-color: #818f5a;
+    height: 20vw;
 }
 
-.recent-addams a {
+.recent-addams .text a {
     display: block;
     width: 26vw;
     height: 4vw;
     margin: 2vw 2vw 1vw;
-    font-size: 2em;
+    font-size: 1.8em;
     text-decoration: none;
     font-weight: 600;
 }
@@ -147,26 +152,28 @@ nav a:hover {
 }
 
 .recent-addams img {
-    width: 100%;
+    height: 20vw;
 }
 
 .recent-radium {
     float: left;
     margin: 0vw 4vw 2vw;
-    display: grid;
-    grid-template-columns: 80% 20%;
+    display: flex;
+    height: 20vw;
+    width: 90%;
 }
 
 .recent-radium .text {
     background-color: #818f5a;
+    height: 20vw;
 }
 
-.recent-radium a {
+.recent-radium .text a {
     display: block;
     width: 26vw;
     height: 4vw;
     margin: 2vw 2vw 1vw;
-    font-size: 2em;
+    font-size: 1.8em;
     text-decoration: none;
     font-weight: 600;
 }
@@ -180,5 +187,5 @@ nav a:hover {
 }
 
 .recent-radium img {
-    width: 100%;
+    height: 20vw;
 }
