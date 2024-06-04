@@ -33,7 +33,7 @@ p {
     font-size: 1.2em;
 }
 
-.home-main, .about-main, .portfolio-main, .resume-main, .contact-main, .addams-main {
+.home-main, .portfolio-main, .resume-main, .addams-main {
     display: inline-block;
 }
 
@@ -236,7 +236,7 @@ section {
 }
 
 .recent-item a:hover {
-    border-bottom: 2px solid #3A7538;
+    border-bottom: 2px solid #587242;
 }
 
 .recent-item h4 {
@@ -257,6 +257,7 @@ section {
 .about-main {
     width: 90%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .about-main h1 {
@@ -268,12 +269,85 @@ section {
 
 .about-text {
     font-weight: 400;
+    line-height: 2em;
+}
+
+.about-subtitle h3 {
+    margin: 1vw 0vw;
+    text-align: center;
+    align-content: center;
+}
+
+.strengths p, .skills p {
+    display: inline-block;
+    margin: 1em 2em;
+    text-align: center;
+    align-content: center;
 }
 
 /*PORTFOLIO.HTML*/
 
 /*RESUME.HTML*/
 
-/*CONTACT.HTML*/
+/*CONTACT.HTML from https://codepen.io/ZachSaucier/pen/jOwNvO*/
+
+.contact-main {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-main h1 {
+    border-bottom: 2px solid #818f5a;
+    width: 80%;
+    margin: 2vw auto;
+    text-align: center;
+}
+
+form {
+    margin: 2vw;
+}
+
+.feedback-input {
+    color:#CCC29C;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #818f5a;
+    transition: all 1s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid #587242; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#818f5a;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:#2e2e2e;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 1s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#587242; }
 
 /*ADDAMS.HTML*/
