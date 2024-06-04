@@ -289,6 +289,73 @@ section {
 
 /*RESUME.HTML*/
 
+.resume-main {
+    width: 100%;
+}
+
+.resume-subtitle h2 {
+    width: 90%;
+    float: left;
+    margin: 1vw 4vw 2vw;
+}
+
+.experience-box {
+    width: 90%;
+    float: left;
+    margin: 0vw 4vw 2vw;
+    background-color: #818f5a;
+    box-shadow: 0vw 0vw 2vw 0.8vw #2e2e2e;
+}
+
+.experience-box h3 {
+    border-bottom: 2px solid #587242;
+    padding-bottom: 0.4vw;
+    color: #2e2e2e;
+    margin: 2vw 2vw 0.6vw;
+}
+
+.experience-box h4 {
+    color: #2e2e2e;
+    margin: 2vw 2vw 0.6vw;
+}
+
+.experience-box p {
+    color: #2e2e2e;
+    margin: 1.2vw 2vw 1.2vw;
+    line-height: 1.4em;
+}
+
+.select-show {
+    width: 90%;
+    float: left;
+    margin: 0vw 4vw 2vw;
+    background-color: #818f5a;
+    box-shadow: 0vw 0vw 2vw 0.8vw #2e2e2e;
+}
+
+.select-show h4 {
+    color: #2e2e2e;
+    padding: 2vw 2vw;
+    margin: 0px;
+    font-style: italic;
+    width: 30%;
+    float: left;
+}
+
+.select-show p {
+    color: #2e2e2e;
+    padding: 2vw 2vw;
+    margin: 0px;
+    width: 70%;
+    float: left;
+    text-align: right;
+    font-size: 1.4em;
+}
+
+.select-show:hover {
+    background-color: #587242;
+}
+
 /*CONTACT.HTML from https://codepen.io/ZachSaucier/pen/jOwNvO*/
 
 .contact-main {
